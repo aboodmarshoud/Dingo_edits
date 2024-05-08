@@ -289,7 +289,6 @@ def angle_to_pwm(angle, servo_params, axis_index, leg_index):
     )
     return pulse_width_micros
 
-
 def angle_to_duty_cycle(angle, pwm_params, servo_params, axis_index, leg_index):
     return pwm_to_duty_cycle(
         angle_to_pwm(angle, servo_params, axis_index, leg_index), pwm_params
